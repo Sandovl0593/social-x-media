@@ -1,17 +1,17 @@
 <script lang="ts" setup>
-const { hoverDefault } = useDefaults();
+const { transition } = useDefaults();
 </script>
 
 <template>
-  <div class="flex flex-col h-screen">
+  <aside class="flex flex-col h-screen">
 
-    <div :class="`p-2 my-2 w-14 ${hoverDefault}`">
+    <header :class="`p-2 my-2 w-14 rounded-full hover:bg-white/10 ${transition}`">
       <NuxtLink to="/">
-        <div class="w-8 h-8">
+        <div class="size-8">
           <IconX />
         </div>
       </NuxtLink>
-    </div>
+    </header>
 
     <div class="mt-2 space-y-3"></div>
 
@@ -50,5 +50,5 @@ const { hoverDefault } = useDefaults();
       <template v-slot:name>More</template>
     </SidebarLeftTab>
 
-  </div>
+  </aside>
 </template>
