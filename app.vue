@@ -1,6 +1,5 @@
 <template>
   <div>
-    <div >
       <div class="min-h-full">
         <div class="grid grid-cols-12 mx-auto sm:px-6 lg:max-w-7xl lg:px-8 lg:gap-5">
 
@@ -12,12 +11,12 @@
           </div>
           
           <!-- Main -->
-          <main class="col-span-12 md:col-span-8 xl:col-span-6">
-            <h1>Main</h1>
+          <main class="col-span-12 md:col-span-7 xl:col-span-6">
+            <NuxtPage />
           </main>
 
           <!-- right -->
-          <div class="hidden md:block md:col-span-3 xl:col-span-4">
+          <div class="hidden md:block md:col-span-4 xl:col-span-4">
             <div class="sticky top-0">
               <SidebarRight />
             </div>  
@@ -25,6 +24,5 @@
         
         </div>
       </div>
-    </div>
   </div>
 </template>

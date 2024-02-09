@@ -7,8 +7,8 @@ const props = defineProps({
 </script>
 
 <template>
-  <section class="m-2 overflow-hidden border-white rounded-2xl bg-card">
-    <h1 class="p-5 text-xl font-bold ">
+  <section class="m-2 p-2 overflow-hidden border-white rounded-2xl bg-card">
+    <h1 class="p-2 text-xl font-extrabold ">
       {{ props.title }}
     </h1> 
     <slot></slot>
